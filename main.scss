@@ -1,0 +1,176 @@
+$primary-color: #ff7a7a;
+$white-color: #fff;
+$text-color: #3e3c49;
+$btn-color: #38cc8c;
+$black-color:#000;
+$border-color: #b9b6d3;
+
+$padding-btn: 1rem 1.5rem;
+$border: 1px solid;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primary-color;
+    background-image: url(../assets/img/bg.png);
+    background-size: cover;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 100vh;
+    margin: auto;
+    padding: 2rem;
+
+    .content {
+        flex: 1;
+        padding: 0 1.25rem;
+        color: $white-color;
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1;
+            margin-bottom: 32px;
+        }
+
+        p {
+            opacity: .8;
+        }
+    }
+
+    .form {
+        flex: 1;
+        padding: 0 1.25rem;
+
+        .box {
+            border-radius: 8px;
+            box-shadow: 0 6px rgba(0, 0, 0, 0.12);
+            
+            background-color: $white-color;
+            text-align: center;
+            padding: 2rem;
+            
+            
+
+            .form-input {
+                padding-bottom: 1.3rem;
+                position: relative;
+                
+                input {
+                    width: 100%;
+                    border: $border $border-color;
+                    padding: $padding-btn;
+                    font-weight: 600;
+                    color: $text-color;
+                    font-size: .8rem;
+                    font-family: 'Poppins', sans-serif;
+                    border-radius: .25rem;
+                }
+
+                small {
+                    display: none;
+                    width: 100%;
+                    font-size: .7rem;
+                    font-weight: 500;
+                    color: $primary-color;
+                    text-align: right;
+                    font-style: italic;
+                }
+            }
+
+            .form-input.active {
+                padding-bottom: .65rem;
+                input {
+                    border: 2px solid $primary-color;
+                    color: $primary-color;
+                }
+
+                &::after {
+                    font-family: "Font Awesome 6 Free";
+                    content: "\0021";
+                    position: absolute;
+                    right: 1.5rem;
+                    top: 1.1rem;
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    background-color: $primary-color;
+                    border-radius: 50%;
+                    color: $white-color;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: .75rem;
+                    z-index: 15;
+                }
+
+                small {
+                    display: inline-block;
+                }
+            }
+
+            button {
+                background-color: $btn-color;
+                width: 100%;
+                outline: none;
+                border: none;
+                border-radius: 0.5rem;
+                border: $border #2fb67c;
+                box-shadow: 0 2px #2fb67c;
+                padding: $padding-btn;
+                color: $white-color;
+                text-transform: uppercase;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1rem;
+                letter-spacing: 1px;
+                font-weight: 600;
+                margin-bottom: 1.15rem;
+                cursor: pointer;
+                transition: .2s all ease-in-out;
+            }
+
+            button:hover {
+                box-shadow: none;
+                transform: translateY(2px);
+            }
+
+            p {
+                color: #b9b6d3;
+                font-size: .75rem;
+                font-weight: 500;
+                text-align: center;
+
+                span {
+                    color: $primary-color;
+                    cursor: pointer;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .box:first-child {
+            background-color: #6055a5;
+            padding: 1rem 2rem;
+            margin-bottom: 24px;
+
+            p {
+                color: $white-color;
+                font-size: 1rem;
+                font-weight: 400;
+
+                span {
+                    font-weight: 600;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Learn to code by <br>watching others</h1>
+            <p>
+                See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how
+                developers think is invaluable.
+            </p>
+        </div>
+        <div class="form">
+            <div class="box">
+                <p>
+                    <span>Try it free 7 days</span> then $20/mo. thereafter
+                </p>
+            </div>
+            <form action="" class="box" id="form">
+                <div class="form-input">
+                    <input type="text" id="firstName" placeholder="First Name" onkeyup="validate(firstName)">
+                    <small></small>
+                </div>
+                <div class="form-input">
+                    <input type="text" id="lastName" placeholder="Last Name" onkeyup="validate(lastName)">
+                    <small></small>
+                </div>
+                <div class="form-input">
+                    <input type="email" id="email" placeholder="Email Address" onkeyup="validateEmail()">
+                    <small></small>
+                </div>
+                <div class="form-input">
+                    <input type="password" id="password" placeholder="Password" onkeyup="validate(password)">
+                    <small></small>
+                </div>
+                <button>Claim your free trial</button>
+                <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
